@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon Search</title>
+  <title>Cat Gallery</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Pokémon Search</h1>
-    <input type="text" id="searchInput" placeholder="Enter Pokémon name or ID">
-    <div id="pokemonInfo"></div>
-  </div>
-  <script src="script.js"></script>
+  <header>
+    <h1>Cat Gallery</h1>
+    <div id="search-container">
+      <input type="text" id="searchInput" placeholder="Search by breed...">
+      <button id="searchButton">Search</button>
+    </div>
+  </header>
+  <main id="gallery"></main>
+  <footer>
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+  </footer>
+  <script type="module" src="app.js"></script>
 </body>
 </html>

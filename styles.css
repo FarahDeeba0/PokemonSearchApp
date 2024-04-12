@@ -1,63 +1,79 @@
+
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffef96; /* Light yellow */
-  background-image: url('https://i.pinimg.com/originals/c1/21/78/c121788f1bf629f8d44a523201f64317.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #ffef96;
 }
 
-.container {
-  max-width: 600px;
-  margin: 20px auto;
+header {
+  background-color: #ff6f61; 
+  color: #fff;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-  border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 20px;
-  color: #ff6f61; /* Red */
+  margin: 0;
+}
+
+#search-container {
+  margin-top: 10px;
+  display: flex; 
+  align-items: center;
 }
 
 input[type="text"] {
-  width: calc(100% - 40px);
+  flex: 1;
   padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px; /* Rounded corners */
-  box-sizing: border-box;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  border: 2px solid #ff6f61;
+  border-radius: 20px; 
+  font-size: 16px;
+  margin-right: 10px;
 }
 
-input[type="text"]::placeholder {
-  color: #888; /* Gray */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6f61; /* Coral color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
 }
 
-input[type="text"]:focus {
-  outline: none;
-  border-color: #ff6f61; /* Red */
+button:hover {
+  background-color: #ff927f; /* Lighter coral on hover */
 }
 
-#pokemonInfo {
-  text-align: left;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
 }
 
-#pokemonInfo h2 {
-  color: #ff6f61; /* Red */
+img {
+  margin: 10px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
-#pokemonInfo img {
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+footer {
+  text-align: center;
+  margin-top: 20px;
 }
 
-#pokemonInfo p {
-  margin-bottom: 10px;
+footer button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Coral color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+}
+
+footer button:hover {
+  background-color: #ff927f; /* Lighter coral on hover */
 }
